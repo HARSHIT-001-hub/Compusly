@@ -8,6 +8,7 @@ import FacultyHome from "./Screens/Faculty/Home";
 import AdminHome from "./Screens/Admin/Home";
 import ForgetPassword from "./Screens/ForgetPassword";
 import UpdatePassword from "./Screens/UpdatePassword";
+import ChatWidget from "./components/ChatWidget";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           </Routes>
         </Router>
       </Provider>
+      {/* <ChatWidget /> */}
     </>
   );
 };
