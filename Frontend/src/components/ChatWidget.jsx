@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiSend } from "react-icons/fi";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyAqlvab1e0I-Ri4_TbG5l0T5gYJJ8jjAjk");
+const genAI = new GoogleGenerativeAI("YOUR_API_KEY");
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 const ChatWidget = () => {
