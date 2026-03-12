@@ -16,6 +16,8 @@ import Subject from "./Screens/Admin/Subject";
 import Branch from "./Screens/Admin/Branch";
 import Profile from "./Screens/Profile";
 import UploadMarks from "./Screens/Faculty/UploadMarks";
+import AIDashboard from './Screens/AI/AIDashboard';
+import AIDashboard from "./AIDashboard"; 
 
 const App = () => {
   return (
@@ -121,6 +123,12 @@ const App = () => {
               <Profile />
             </ProtectedRoute>
           }
+        />
+        <Route
+        path='/ai-dashboard'
+        element={
+        <AIDashboard />
+        }
         />
       </Routes>
     </Router>
