@@ -11,6 +11,8 @@ import StudentFinder from "./StudentFinder";
 import Profile from "./Profile";
 import Marks from "./AddMarks";
 import Exam from "../Exam";
+import AIDashboard from "./AIDashboard";
+import ChatWidget from "../../components/ChatWidget";
 
 const MENU_ITEMS = [
   { id: "home", label: "Home", component: null },
@@ -20,6 +22,7 @@ const MENU_ITEMS = [
   { id: "student info", label: "Student Info", component: StudentFinder },
   { id: "marks", label: "Marks", component: Marks },
   { id: "exam", label: "Exam", component: Exam },
+  { id: "ai-dashboard", label: "🤖 AI Dashboard", component: AIDashboard }, // ← NEW
 ];
 
 const Home = () => {
@@ -92,6 +95,7 @@ const Home = () => {
         {renderContent()}
       </div>
       <Toaster position="bottom-center" />
+                  <ChatWidget />
     </>
   );
 };

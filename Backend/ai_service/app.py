@@ -26,7 +26,7 @@ CORS(app)
 
 # ─── Database ────────────────────────────────────────────────────────────────
 
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/compusly")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://127.0.0.1:27017/College-Management-System")
 client = MongoClient(MONGO_URI)
 db = client.get_database()
 

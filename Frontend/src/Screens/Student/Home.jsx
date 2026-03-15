@@ -11,6 +11,7 @@ import Profile from "./Profile";
 import Exam from "../Exam";
 import ViewMarks from "./ViewMarks";
 import { useNavigate, useLocation } from "react-router-dom";
+import ChatWidget from "../../components/ChatWidget";
 
 const MENU_ITEMS = [
   { id: "home", label: "Home", component: null },
@@ -124,6 +125,7 @@ const Home = () => {
         {renderContent()}
       </div>
       <Toaster position="bottom-center" />
+                  <ChatWidget />
     </>
   );
 };

@@ -124,12 +124,6 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-        <Route
-        path='/ai-dashboard'
-        element={
-        <AIDashboard />
-        }
-        />
       </Routes>
     </Router>
   );

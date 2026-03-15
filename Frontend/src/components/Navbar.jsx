@@ -1,6 +1,6 @@
 import React from "react";
 import { FiLogOut } from "react-icons/fi";
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { RxDashboard } from "react-icons/rx";
 import CustomButton from "./CustomButton";
 const Navbar = () => {
@@ -25,7 +25,6 @@ const Navbar = () => {
           </span>{" "}
           {router.state && router.state.type} Dashboard
         </p>
-        <Link to="/ai-dashboard">🤖 AI Dashboard</Link>
         <CustomButton variant="danger" onClick={logouthandler}>
           Logout
           <span className="ml-2">

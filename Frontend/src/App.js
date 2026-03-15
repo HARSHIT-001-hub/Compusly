@@ -28,7 +28,6 @@ const App = () => {
           </Routes>
         </Router>
       </Provider>
-      {/* <ChatWidget /> */}
     </>
   );
 };

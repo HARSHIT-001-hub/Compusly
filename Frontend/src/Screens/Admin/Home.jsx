@@ -24,6 +24,7 @@ import Profile from "./Profile";
 import Exam from "../Exam";
 import AIDashboard from "./AIDashboard";   // ← NEW
 import { useNavigate, useLocation } from "react-router-dom";
+import ChatWidget from "../../components/ChatWidget";
 
 
 const MENU_ITEMS = [
@@ -111,7 +112,8 @@ const Home = () => {
     <>
       <Navbar />
       <div className="max-w-7xl mx-auto">
-        <ul className="flex flex-wrap justify-evenly items-center gap-3 w-full mx-auto my-8">
+        <div className="w-full overflow-x-auto my-6">
+          <ul className="flex items-center gap-4 min-w-max px-4">
           {MENU_ITEMS.map(item => (
             <li
               key={item.id}
@@ -123,8 +125,10 @@ const Home = () => {
           ))}
         </ul>
         {renderContent()}
+        </div>
       </div>
       <Toaster position="bottom-center" />
+            <ChatWidget />
     </>
   );
 };
